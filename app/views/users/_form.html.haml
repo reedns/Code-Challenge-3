@@ -1,0 +1,10 @@
+.well
+  = bootstrap_form_for @user, layout:"horizontal" do |f|
+    .form-group
+      = f.text_field :first_name, label: "First Name"
+    .form-group
+      = f.text_field :last_name, label: "Last Name"
+    .form-group
+      = f.email_field :email
+    .form-group
+      = f.submit button, class: "btn btn-success"
